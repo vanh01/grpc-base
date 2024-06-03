@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package basemsg;
+
+option go_package = "github.com/vanh01/grpc-base/protos/basemsg";
+
+message GEventMessage
+{
+	string Data = 1;
+	string DataType = 2;
+	string ReturnDataType = 3;
+	string ConsumerType = 4;
+}
+
+message GEventResult
+{
+	string Data = 1;
+	string DataType = 2;
+}

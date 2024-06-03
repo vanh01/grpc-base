@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package b;
+
+import "base_msg.proto";
+
+option go_package = "github.com/vanh01/grpc-base/protos/b";
+
+service B {
+    rpc SendMessage(basemsg.GEventMessage) returns (basemsg.GEventResult);
+}
